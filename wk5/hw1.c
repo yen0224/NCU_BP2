@@ -13,7 +13,7 @@ double toTWD(void){
 }
 int main(int argc, char const *argv[])
 {
-    printf("請輸入要兌換的美元金額：");
+    puts("請輸入要兌換的美元金額：");
     scanf("%d",&usd);
     printf("%f\n%f\n%f\n",toJPY(),toEUR(),toTWD());
     return 0;
