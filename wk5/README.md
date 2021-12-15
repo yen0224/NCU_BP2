@@ -27,7 +27,10 @@ In the 'isPerfect' function, we first initialize the variable  *factorSum* which
 * flip()部分
 設置flip()以rand()進行亂數取值，接著直接回傳對2取餘數的值（只會是0或1），代表每一次的擲幣結果
 * main()部分
-設置result, Tct, Hct三個整數變數空間，因Tct, Hct的用途是紀錄正反面出現次數，故需要先進行初始化；進入執行十次的迴圈，呼叫flip()將回傳值存到result中，並輸出、紀錄每一次的flip()結果，==這邊用到了三元運算子*(condition)?True expression:False expression*，在17行若result為1，輸出"Heads"，反之輸出"Tails"，在18行則若true進行Hct的遞增，false則Tct的遞增。
+設置result, Tct, Hct三個整數變數空間，因Tct, Hct的用途是紀錄正反面出現次數，故需要先進行初始化；
+進入執行十次的迴圈，呼叫flip()將回傳值存到result中，並輸出、紀錄每一次的flip()結果，
+註：這邊用到了三元運算子*(condition)?True expression:False expression*，
+在17行若result為1，輸出"Heads"，反之輸出"Tails"，在18行則若true進行Hct的遞增，false則Tct的遞增。
 ## 第四題
 ```
 LCM(lowest common multiple)是最小公倍數的意思，請撰寫一個函式 LCM()，該函式會獲得兩個整數並回傳該兩個整數的最小公倍數。
@@ -39,7 +42,7 @@ LCM(lowest common multiple)是最小公倍數的意思，請撰寫一個函式 L
 我們看到這題後要做的，就是將這個概念轉換成程式碼
 
 首先定義我們會用到的變數：
-```c=
+```=
 int lcm=1;
 int i=2;
 ```
@@ -59,6 +62,7 @@ while( a>=i && b>=i )
             i++;
         }
         lcm=lcm*a*b;
+    }
 ```
 - while的作用：
     - 外層的while是在對是否其中一個數已分解到終點進行判斷，若達到終點則把lcm, a, b進行最後一次的算數
