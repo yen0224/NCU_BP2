@@ -10,7 +10,6 @@ int main(int argc, char const *argv[])
     {
         ct[i] = 0;
     }
-
     //輸入
     for (int i = 0; i < 10; i++)
     {
@@ -23,7 +22,6 @@ int main(int argc, char const *argv[])
             break;
         }*/
     }
-
     for (int i = 0; i < count; i++)
     {
         if (!i)
@@ -48,6 +46,5 @@ int main(int argc, char const *argv[])
                 printf("%d\t%d\n", sq[i], ct[sq[i]]);
         }
     }
-
     return 0;
 }
