@@ -22,7 +22,7 @@ int LCM(int a, int b){
 }
 int main(int argc, char const *argv[])
 {
-    printf("請輸入兩個整數：");
+    printf("請輸入兩個整數:");
     int a, b;
     scanf("%d %d",&a,&b);
     printf("LCM is %d",LCM(a,b));

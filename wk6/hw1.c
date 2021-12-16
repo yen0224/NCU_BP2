@@ -17,10 +17,10 @@ int main(int argc, char const *argv[])
         sq[i] = input;
         ct[input]++;
 
-        /*if(getchar()=='\n'){
+        if(getchar()=='\n'){
             count=i;
             break;
-        }*/
+        }
     }
     for (int i = 0; i < count; i++)
     {
@@ -30,6 +30,7 @@ int main(int argc, char const *argv[])
         }
         else
         {
+            check = 1;
             for (int j = 0; j < i; j++)
             {
                 if (sq[j] == sq[i])
