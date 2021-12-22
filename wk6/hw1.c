@@ -31,12 +31,6 @@ int main(int argc, char const *argv[])
     }
     for (int i = 0; i < count; i++)
     {
-        if (!i)
-        {
-            printf("%d\t%d\n", sq[i], ct[sq[i]]);
-        }
-        else
-        {
             check = 1;
             for (int j = 0; j < i; j++)
             {
@@ -52,7 +46,6 @@ int main(int argc, char const *argv[])
             }
             if (check)
                 printf("%d\t%d\n", sq[i], ct[sq[i]]);
-        }
     }
     return 0;
 }
