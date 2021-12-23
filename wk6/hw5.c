@@ -1,3 +1,10 @@
+//C standard: C11
+//known issue: in C99 standard, iterator can not be declared in for loop
+//if encounter error, please declared the iter outside the loop like below
+/*int i;
+ *for(i;i<count;expression)
+ *  statements;
+*/
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {

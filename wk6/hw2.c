@@ -1,4 +1,11 @@
 // https://ithelp.ithome.com.tw/articles/10220017
+//C standard: C11
+//known issue: in C99 standard, iterator can not be declared in for loop
+//if encounter error, please declared the iter outside the loop like below
+/*int i;
+ *for(i;i<count;expression)
+ *  statements;
+*/
 #include <stdio.h>
 #include <string.h>
 int testPalindrome(char str[], int a, int b)
@@ -19,22 +26,25 @@ int testPalindrome(char str[], int a, int b)
 int main(int argc, char const *argv[])
 {
     char str[1024];
-    int length,result;
+    int length, result;
     gets(str);
-    length=strlen(str);
-    if (length==0)
+    length = strlen(str);
+    if (length == 0)
     {
         printf("1\n");
     }
-    else{
-        result=testPalindrome(str,0,length-1);
-        if(result){
+    else
+    {
+        result = testPalindrome(str, 0, length - 1);
+        if (result)
+        {
             printf("1\n");
         }
-        else{
+        else
+        {
             printf("0\n");
         }
     }
-    
+
     return 0;
 }
