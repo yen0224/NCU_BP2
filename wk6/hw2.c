@@ -1,0 +1,40 @@
+// https://ithelp.ithome.com.tw/articles/10220017
+#include <stdio.h>
+#include <string.h>
+int testPalindrome(char str[], int a, int b)
+{
+    if (str[a] != str[b])
+    {
+        return 0;
+    }
+    else if (a == b || (a + 1 == b && str[a + 1] == str[b]))
+    {
+        return 1;
+    }
+    else if (str[a] == str[b])
+    {
+        return testPalindrome(str, a + 1, b - 1);
+    }
+}
+int main(int argc, char const *argv[])
+{
+    char str[1024];
+    int length,result;
+    gets(str);
+    length=strlen(str);
+    if (length==0)
+    {
+        printf("1\n");
+    }
+    else{
+        result=testPalindrome(str,0,length-1);
+        if(result){
+            printf("1\n");
+        }
+        else{
+            printf("0\n");
+        }
+    }
+    
+    return 0;
+}
