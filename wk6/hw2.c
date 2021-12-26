@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
 {
     char str[1024];
     int length, result;
-    gets(str);
+    fgets(str,1024,stdin);
     length = strlen(str);
     if (length == 0)
     {
@@ -35,7 +35,7 @@ int main(int argc, char const *argv[])
     }
     else
     {
-        result = testPalindrome(str, 0, length - 1);
+        result = testPalindrome(str, 0, length - 2);
         if (result)
         {
             printf("1\n");
