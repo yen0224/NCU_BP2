@@ -60,7 +60,7 @@ int main(int argc, char const *argv[])
         printf("%lf %d %lf=%lf\n", *opA, *opr, *opB, func(opA, opB));
         printf("Enter a number between 0 to 3(+,-,*,/),-1 to end:");
         scanf("%d", opr);
-        if(&opr==-1) break;
+        if(operator==-1) break;
         printf("Input two numbers to the operand:");
         scanf("%lf %lf", opA, opB);
     }
